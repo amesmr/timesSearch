@@ -79,9 +79,9 @@
         return;
       }
 
-      url += '?' + $.param({
-        'q': searchTerm,
-      });
+      url += "?fq=\"" + (searchTerm) + "\""
+      
+      // url += "&q=\"" + $("#searchTerm").val() + "\"";
       // user entered start date
       if (startDate.toString().length == 8) {
         url += "&";
